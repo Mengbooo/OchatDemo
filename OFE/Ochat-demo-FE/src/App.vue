@@ -64,12 +64,12 @@ setInterval(() => {
       </div>
     </template>
     <template #footer>
-      <div style="color: #00ffed;"><strong>Powered by Bolaxious</strong></div>
+      <div style="color: #00ffed;"><strong>Powered by <a href="https://github.com/Mengbooo">Bolaxious</a></strong></div>
     </template>
   </a-list>
   <a-row style="margin-top: 20px">
     <a-col span='4'>
-      <a-input v-model:value="username" placeholder="用户名" style="height: 3vh;">
+      <a-input v-model:value="username" placeholder="用户名" style="height: 3vh; align-items: center;justify-content: center;display: flex; font-size: 1vh;">
         <template #prefix>
           <UserOutlined />
         </template>
@@ -84,7 +84,7 @@ setInterval(() => {
       </a-input>
     </a-col>
     <a-col span="4" offset="1">
-      <a-button type="primary" style="width: 13vw;height: 3vh;background: #00ffed;" @click="handleClickSubmit"><strong>提交</strong></a-button>
+      <a-button type="primary" style="width: 13vw;height: 3vh;background: #00ffed;align-items: center;justify-content: center;display: flex;" @click="handleClickSubmit" ><strong style="font-size: 1.5vh;">提交</strong></a-button>
     </a-col>
   </a-row>
 </template>
